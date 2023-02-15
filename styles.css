@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    background-color: #101414;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input {
+    display: none;
+}
+
+label {
+    color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icon-wrapper {
+    display: inline;
+    font-size: 20px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.album {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.images {
+    position: relative;
+    overflow: hidden;
+}
+
+.album-background {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(40px);
+    -webkit-filter: blue(40px);
+}
+
+.album-img {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+    height: 440px;
+    object-fit: cover;
+    filter: contrast(180%) saturate(2);
+    border: 6px solid white;
+    box-shadow: 0 0 40px black;
+}
+
+.parental-advisory {
+    position: absolute;
+    top: 385px;
+    right: 50px;
+    width: 100px;
+}
+
+.title {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    font-size: 50px;
+    font-weight: 700;
+    writing-mode: sideways-lr;
+    transform-origin: 0% 0%;
+    text-shadow: 0 0 30px #000;
+}
+
+.bar {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+}
+
+.icons {
+    display: flex;
+    gap: 44px;
+    position: absolute;
+    top: 570px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 30 #000;
+}
+
+@media screen and (max-width: 500px) {
+    .album {
+        width: 100vw;
+        width: 100dvw;
+    }
+    .album-img {
+        top: 190px;
+        width: 330px;
+        height: 330px;
+    }
+    .parental-advisory {
+        top: 300px;
+        right: 40px;
+        width: 60px;
+    }
+    .title {
+        top: 50px;
+        left: 40px;
+        font-size: 35px;
+    }
+    .bar {
+        top: 400px;
+        width: 330px;
+    }
+    .icons {
+        top: 450px;
+        font-size: 30px;
+    }
+    label {
+        position: relative;
+        top: -6px;
+    }
+}

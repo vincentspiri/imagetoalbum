@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+
+    <script src="https://kit.fontawesome.com/dd701f141e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="album">
+            <div class="images">
+                <img src="./img/bmw.jpg" class="album-background">
+                <img src="./img/bmw.jpg" class="album-img">
+                <img src="./img/parental-advisory.svg" class="parental-advisory">
+                <img src="./img/test.png" class="bar">
+                <span class="title" contenteditable="true" spellcheck="false">song title</span>
+                <div class="icons">
+                    <i class="fa-solid fa-download" style="font-size: 34px; position: relative; top: 3px"></i>                    
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-solid fa-pause pause"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <label for="image-input">
+                        <i class="fa-solid fa-image"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="file" id="image-input" accept="image/*">
+    <script src="./main.js"></script>
+</body>
+
+</html>
