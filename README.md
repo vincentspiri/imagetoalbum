@@ -1,0 +1,1 @@
+Hosted on github pages at https://vincentspiri.github.io/imagetoalbum/
